@@ -1,11 +1,11 @@
-.product-hits-section,
+.product-section.hit,
 .products-section{
     max-width: 865px;
     min-height: 300px;
     background-color: #fff;
 }
 
-.product-hit-item{
+.product-item{
     text-align: center;
     padding: 5px;
     padding-bottom: 15px;
@@ -14,13 +14,13 @@
         flex-direction: row;
     }
 
-    .product-hit-info{
+    .product-info{
       @include font(500, 11px, 14px);
       color: #66666a;
       padding: 5px;
     }
 
-    .hit-img{
+    .product-img{
         display: block;
         margin: 0 auto;
         width: 160px;
@@ -28,7 +28,7 @@
     }
 }
 
-.product-hit-item:first-child{
+.product-item:first-child{
     border-right: 1px solid #ddd;
 }
 
@@ -38,13 +38,13 @@
     align-items: center
 }
 
-.product-hit-price{
+.product-price{
     @include font(400, 20px, 28px);
     color: #0060fa;
     margin-bottom: 10px
 }
 
-.product-hit-button{
+.product-button{
     min-width: 80px;
     color: #fff;
     background-color: #0060fa;
@@ -56,7 +56,7 @@
     outline: none;
 }
 
-.product-hit-button:hover{
+.product-button:hover{
     color: #0060fa;
     background-color: #fff;
 }

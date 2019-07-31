@@ -54,22 +54,10 @@
 
 .filter-params{
     display: block;
-    position: relative;
     width: 25px;
     height: 25px;
     margin-left: auto;
     cursor: pointer;
-
-    &:after{
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -3px;
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: #0060fa;
-    }
 }
 
     .custom-list label{
@@ -99,7 +87,6 @@
     display: inline-block;
     max-width: 257px;
     background-color: #c2c2c2;
-    padding: 15px;
     border-radius: 20px;
     padding: 30px;
 

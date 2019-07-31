@@ -41,10 +41,18 @@ $(".hamburger-overlay").on("click", function (e) {
 $(".hamburger").on("click", showHamburgerMenu);
 
 $(document).ready(function () {
-  $('.product-hit-list').slick({
+  $('.product-list.hit').slick({
     autoplay: true,
     autoplaySpeed: 2000,
       slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: false,
+  });
+});
+
+$(document).ready(function () {
+  $('.slik-slider').slick({
+    slidesToShow: 2,
     slidesToScroll: 2,
     arrows: false,
   });
