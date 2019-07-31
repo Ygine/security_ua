@@ -1,0 +1,95 @@
+.product-hits-section,
+.products-section{
+    max-width: 865px;
+    min-height: 300px;
+    background-color: #fff;
+}
+
+.product-hit-item{
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 15px;
+
+    @include respondTo(tablet){
+        flex-direction: row;
+    }
+
+    .product-hit-info{
+      @include font(500, 11px, 14px);
+      color: #66666a;
+      padding: 5px;
+    }
+
+    .hit-img{
+        display: block;
+        margin: 0 auto;
+        width: 160px;
+        height: 160px;
+    }
+}
+
+.product-hit-item:first-child{
+    border-right: 1px solid #ddd;
+}
+
+.price-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.product-hit-price{
+    @include font(400, 20px, 28px);
+    color: #0060fa;
+    margin-bottom: 10px
+}
+
+.product-hit-button{
+    min-width: 80px;
+    color: #fff;
+    background-color: #0060fa;
+    @include font(400, 14px, 14px);
+    padding: 6px;
+    border: 1px solid #0060fa;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.product-hit-button:hover{
+    color: #0060fa;
+    background-color: #fff;
+}
+
+
+.stocks-list,
+.filter-list{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.stocks-list-item:not(:last-child) .stocks-name,
+.filter-list-item:not(:last-child) .filter-name{
+    margin-right: 20px;
+}
+
+.stocks-name,
+.filter-name{
+    @include font(400, 11px, 14px);
+    color: #66666a;
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+.active-btn{
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff5757;
+    border-radius: 15px;
+}
+
+.stocks-name.active-btn{   
+    text-transform: uppercase;
+    padding: 8px 15px;
+}

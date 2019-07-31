@@ -1,0 +1,123 @@
+.products-section{
+    padding-top: 10px;
+}
+
+.filters-wrap{
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+
+    .filter-list{
+        background-color: #ededee;
+        border-radius: 15px;
+        padding: 7px 10px;
+    }
+
+    .filter-name{
+        text-decoration-style: dotted; 
+        font-weight: 500;
+        color: #8e8d93;    
+    }
+}
+
+
+
+
+
+
+
+
+.filter-content{
+    position: fixed;
+    top: 85px;
+    right: 0;
+    z-index: 9999999;
+}
+
+.form-overlay{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: calc(100vh - 85px);
+    background-color: rgba(0,0,0, 0.5);
+    padding: 10px;
+}
+
+
+.filter-text{
+    @include font(500, 12px, 14px);
+    margin-right: 20px;
+    color: #66666a;
+    margin-left: 17px;
+}
+
+
+.filter-params{
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    cursor: pointer;
+
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #0060fa;
+    }
+}
+
+    .custom-list label{
+        @include font(400, 14px, 19px);
+        color: #66666a;
+    }
+
+  .custom-list label::before {
+    display: inline-block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+  }
+
+  .custom-list input[type="checkbox"]:checked+label::before {
+    background: url(./../images/OK.svg)no-repeat center/contain;
+    border: none;
+    background-color: #0060fa;
+  }
+
+.filter-form{
+    position: relative;
+    display: inline-block;
+    max-width: 257px;
+    background-color: #c2c2c2;
+    padding: 15px;
+    border-radius: 20px;
+    padding: 30px;
+
+    .filter_close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        outline: none;
+        background: none;
+    }
+}
+
+.producer{
+    margin-bottom: 15px;    
+}
+
+.producer-title{
+    @include font(500, 16px, 14px);
+    margin-bottom: 10px;
+    color: #66666a;
+}

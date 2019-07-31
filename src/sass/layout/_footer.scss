@@ -1,0 +1,51 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: #8e8d93;
+    border-radius: 20px 20px 0 0;
+
+    .logo span{
+        color: #fff;
+        display: none;
+        @include font(700, 23px, 1.2);
+    }
+
+    .social-block {
+       display: flex;
+
+       li:not(:last-child){
+           position: relative;
+           margin-right: 20px;
+           padding-right: 15px;
+
+           &:after{
+               content: '';
+               position: absolute;
+               right: 0;
+               top: 42%;
+               height: 20px;
+               display: block;
+               width: 1px;
+               background-color: #c7c6c9;
+               transform: translateY(-50%);
+           }
+       }
+    }
+
+    .social-block svg{
+        fill: #c7c6c9;
+        margin-right: 10px;
+    }
+}
+
+.youtube-block{
+    display: flex;
+
+    .social-text{
+        @include font(400, 11px, 12px);
+        color: #fff;
+        margin-top: 2px;
+    }
+}

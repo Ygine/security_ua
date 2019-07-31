@@ -1,0 +1,73 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-Helvetica, "Rpboto", "Open Sans", sans-serif;
+  color: #000;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: none;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+a,
+button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+.wrapper{
+  background: 
+              // url(./../images/background.png)no-repeat bottom/contain,
+              linear-gradient(to top, #e8e8e9, #ffffff)no-repeat;
+}
+
+.container{
+  min-width: 320px;
+  max-width: 865px;
+}
+
+.svg{
+  width: 20px;
+  height: 20px;
+  fill: red;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

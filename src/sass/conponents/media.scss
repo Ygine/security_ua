@@ -1,0 +1,29 @@
+.sign-menu{
+    @include respondTo(small){
+        display: none;
+    }
+    @include respondTo(tablet){
+        display:grid;
+    }
+}
+
+button.hamburger{
+    @include respondTo(tablet){
+        display:none;
+    }
+} 
+
+.site-navigation{
+    @include respondTo(tablet){
+        display:block;
+
+        .main-menu .main-menu_link{
+            font-size: 12px;
+            
+            @include respondTo(smallScreen){
+                font-size: 14px;
+            }
+            
+        }
+    }   
+}

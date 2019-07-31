@@ -1,0 +1,43 @@
+.tooltip{
+    z-index:5;
+}
+
+.location-tooltip, .phone-tooltip {
+    position: absolute;
+    display: none;
+    min-width: 180px;
+    max-width: 200px;
+    top: 105%;
+    left: -50px;
+    color: #181616;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0 0 9px rgba(5,5,5,.15);
+    padding: 20px 15px;
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+
+    &:before{
+        @include triangle("up", 10px, #fff);
+        top: -8px;
+        left: 66px;
+    }
+
+    span{
+        color: red;
+    }
+
+}
+
+.tooltip .close{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.tooltip.show{
+    display: block;
+}
+

@@ -1,0 +1,56 @@
+.request{
+    min-height: 220px;
+    border-radius: 20px;
+    background: url(./../images/Layer_54.png)no-repeat center/cover;
+    margin: 10px 10px;
+    padding: 50px 20px 20px 20px;
+    color: #fff;
+
+    .request-subtitle{
+        @include font(400, 16px, 20px);
+        margin-bottom: 10px;
+    }
+
+    .request-title{
+        @include font(500, 26px, 20px);
+        margin-bottom: 20px;
+    }
+
+    .request-info{
+        display: flex;
+        align-items: flex-start;
+
+        .request-btn{
+            @include font(400, 16px, 20px);
+            padding: 10px;
+            margin-right: 30px;
+        }
+
+        .request-info-text{
+            @include font(400, 10px, 1.2);
+        }
+    }
+}
+
+.article{
+    padding: 15px;
+
+    .article-link{
+        display: block;
+        padding: 15px;
+        background-color: #ffd333;
+        border-radius: 10px;
+        color: #0060fa;
+        text-align: center;
+        border: 1px solid #ffd333;
+        transition: color, border, background-color 300ms linear;
+        background: url(./../images/articles-icon-mob.png)no-repeat 17% 50%, #ffd333,;
+        cursor: pointer;
+
+        &:hover{
+            border: 1px solid #0060fa;
+            background-color: #dddddd;
+            transition: color, border, background-color 300ms linear;
+        }
+    }
+}
