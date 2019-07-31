@@ -1,29 +1,53 @@
-.sign-menu{
-    @include respondTo(small){
-        display: none;
-    }
-    @include respondTo(tablet){
-        display:grid;
+@media(min-width: 767px){
+    // header
+  .smart-menu__item{
+    padding: 7px 17px;
+  }  
+  .smart-menu_language{
+    display: none;
+  }
+  .lang-list{
+    display: flex;
+  }
+  .hamburger-overlay{
+    top: 95px;
+  } 
+
+  .top-section .logo span{
+    display: block;
+  }
+}
+
+@media(min-width: 1023px){
+    // header
+    .top-section .logo{
+      display: none;
     }
 }
 
-button.hamburger{
-    @include respondTo(tablet){
-        display:none;
+@media(min-width: 1024px){
+    // header
+    .nav-menu{
+      display: flex;
     }
-} 
 
-.site-navigation{
-    @include respondTo(tablet){
-        display:block;
+    .search-form__input{
+      padding: 12px 32px 12px 8px;
+    }
 
-        .main-menu .main-menu_link{
-            font-size: 12px;
-            
-            @include respondTo(smallScreen){
-                font-size: 14px;
-            }
-            
-        }
-    }   
+    .search-section .logo{
+      display: flex;
+
+        img{
+          width: 48px;
+          height: 48px;
+          margin-right: 15px;
+       }
+
+       span{
+         display: block;
+         @include font( 700, 36px, 45px);
+         text-shadow: 2px 5px 6px rgba(2, 2, 6, 0.16);
+       }
+    }
 }

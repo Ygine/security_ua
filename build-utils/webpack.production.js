@@ -30,19 +30,7 @@ module.exports = env => ({
           }
         }
       ]
-      },
-      {
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              name: "images/[name].[ext]",
-              limit: 5000
-            }
-          }
-        ]
-      },
+      }
     ]
   },
   plugins: [

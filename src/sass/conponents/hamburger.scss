@@ -11,6 +11,11 @@
 
 .hamburger {
     padding: 6px 8px !important;
+
+    @include respondTo(smartphone){
+        padding: 10px !important;
+        padding-top: 15px !important;
+       }
 }
 
 .hamburger:focus {

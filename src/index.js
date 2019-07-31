@@ -44,8 +44,8 @@ $(document).ready(function () {
   $('.product-list.hit').slick({
     autoplay: true,
     autoplaySpeed: 2000,
-      slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     arrows: false,
   });
 });
@@ -54,7 +54,10 @@ $(document).ready(function () {
   $('.slik-slider').slick({
     slidesToShow: 2,
     slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 2000,
     arrows: false,
+
   });
 });
 
@@ -64,11 +67,11 @@ const removeTooltip = (e) => {
   tooltip.toggleClass('show');
 }
 
-const openTooltip2 = (e, openTooltip, tooltip) =>{
+const openTooltip2 = (e, openTooltip, tooltip) => {
   if (openTooltip[0] === tooltip[0]) {
     openTooltip.removeClass('show');
     return;
-  } 
+  }
 
   if (openTooltip.length !== 0) {
     openTooltip.removeClass('show');
@@ -78,28 +81,24 @@ const openTooltip2 = (e, openTooltip, tooltip) =>{
 }
 
 const heandleClickTooltip = (e) => {
-  if (e.target.nodeName !== 'svg' && e.target.nodeName !== 'use') {
+  if (e.target.nodeName !== 'IMG') {
     return;
   }
 
   const openTooltip = $('.tooltip.show');
-  const tooltip = $(e.target).parents('.smart-menu__item').children('.tooltip');
+  const tooltip = $(e.target).siblings('.tooltip');
   let action = e.target.dataset.action;
-
-  if (e.target.nodeName === 'use') {
-    action = $(e.target).parents('svg').attr('data-action');
-  }
 
   switch (action) {
     case "location-tooltip":
     case "phone-tooltip":
-        openTooltip2(e, openTooltip, tooltip);
+      openTooltip2(e, openTooltip, tooltip);
       break;
     case "close-tooltip":
-        removeTooltip(e);
+      removeTooltip(e);
       break;
     case "caret-tooltip":
-        MicroModal.show('note-editor-modal');
+      MicroModal.show('note-editor-modal');
       break;
     default:
       console.log("some error");
@@ -110,7 +109,7 @@ $('.smart-menu').on('click', heandleClickTooltip);
 
 // HAMBURGER MENU 
 
-const changeViewMenu = (e) =>{
+const changeViewMenu = (e) => {
   if (e.target.nodeName !== 'LI') {
     return;
   }
@@ -118,32 +117,33 @@ const changeViewMenu = (e) =>{
   const menu = e.target.dataset.menu;
   const activeMenu = $('.main-menu_header li.active');
 
-  if(menu === "main-menu"){
+  if (menu === "main-menu") {
     $('.main-menu-list').show();
     $('.serv-menu-list').hide();
-    activeMenu? activeMenu.removeClass('active') : '' ;
+    activeMenu ? activeMenu.removeClass('active') : '';
     $(e.target).addClass('active');
-  }else{
+  } else {
     $('.serv-menu-list').show();
     $('.main-menu-list').hide();
-    activeMenu? activeMenu.removeClass('active') : '' ;
+    activeMenu ? activeMenu.removeClass('active') : '';
     $(e.target).addClass('active');
   }
 
 }
 
 const handleFilter = () => {
-    $('.filter-content').removeClass('visually-hidden');
-    $('.form-overlay').on('click', function(e){
-      if(e.currentTarget !== e.target){
-        return
-      }
-      $('.filter-content').addClass('visually-hidden');
-    })
+  $('.filter-content').removeClass('visually-hidden');
+  $('.form-overlay').on('click', function (e) {
+    if (e.currentTarget !== e.target) {
+      return
+    }
+    $('.filter-content').addClass('visually-hidden');
+  })
 }
 
 $('.main-menu_header').on('click', changeViewMenu);
 $('.filter-params').on('click', handleFilter);
+
 $('.filter_close').on('click', () => {
   $('.filter-content').addClass('visually-hidden');
 });

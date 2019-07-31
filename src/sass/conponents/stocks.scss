@@ -6,6 +6,7 @@
 }
 
 .product-item{
+    max-width: 270px;
     text-align: center;
     padding: 5px;
     padding-bottom: 15px;
@@ -26,10 +27,6 @@
         width: 160px;
         height: 160px;
     }
-}
-
-.product-item:first-child{
-    border-right: 1px solid #ddd;
 }
 
 .price-wrap{

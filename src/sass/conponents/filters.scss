@@ -77,7 +77,7 @@
   }
 
   .custom-list input[type="checkbox"]:checked+label::before {
-    background: url(./../images/OK.svg)no-repeat center/contain;
+    background: url(../images/icons/OK.svg)no-repeat center/contain;
     border: none;
     background-color: #0060fa;
   }
@@ -95,7 +95,7 @@
         right: 10px;
         top: 10px;
         outline: none;
-        background: none;
+        background: url(../images/icons/cross.svg)no-repeat center/contain;
     }
 }
 

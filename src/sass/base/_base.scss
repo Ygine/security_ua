@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: $font-Helvetica, "Rpboto", "Open Sans", sans-serif;
-  color: #000;
+  color: #66666a;
 }
 
 img {
@@ -37,6 +37,7 @@ button {
   list-style: none;
   text-decoration: none;
   border: none;
+  background: none;
 }
 
 .wrapper{
@@ -48,12 +49,6 @@ button {
 .container{
   min-width: 320px;
   max-width: 865px;
-}
-
-.svg{
-  width: 20px;
-  height: 20px;
-  fill: red;
 }
 
 .visually-hidden:not(:focus):not(:active),

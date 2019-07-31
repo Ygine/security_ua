@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Security UA</title>
-
 </head>
 
 <body>
@@ -85,105 +84,114 @@
     </div>
 
     <header class="header">
-      <div class="header_wrap">
-        <a href="#" class="logo">
-          <img src="./images/logo.png" alt="Security UA">
-          
-          <span>Security UA</span>
-        </a>
+
+      <section class="header_wrap top-section">
+          <a href="#" class="logo">
+            <img src="./images/logo.png" alt="Security UA">         
+            <span>Security UA</span>
+          </a>
+        <ul class="lang-list">
+          <li class="lang-item"><button class="lang-name">MD</button></li>
+          <li class="lang-item"><button class="lang-name active">RU</button></li>
+          <li class="lang-item"><button class="lang-name">EN</button></li>
+        </ul>
 
         <ul class="smart-menu">
-          <li class="smart-menu__item">
-            <svg class="smart-menu_svg" width="25" height="25">
-              <use href="images/sprite.svg#icon-language"></use>
-            </svg>
-            <div class="language-tooltip">
-
-            </div>
-          </li>
-          <li class="smart-menu__item">
-            <svg class="smart-menu_svg" data-action="location-tooltip"
-              width="25" height="25">
-              <use href="images/sprite.svg#icon-location"></use>
-            </svg>
-            <div class="tooltip location-tooltip">
-              <p> Киёв, ул. Матроса Кошки 7,
-                офис 620</p>
-              <svg class="close" data-action="close-tooltip" width="20"
-                height="20">
-                <use href="images/sprite.svg#icon-close"></use>
-              </svg>
-            </div>
-          </li>
-          <li class="smart-menu__item">
-            <svg class="smart-menu_svg" data-action="phone-tooltip" width="25"
-              height="25">
-              <use href="images/sprite.svg#icon-phone"></use>
-            </svg>
-            <div class="tooltip phone-tooltip">
-              <p>тел./факс: +38096 000 00 00</p>
-              <p>моб.: +38096 000 00 0 </p>
-              <hr>
-              <p>e-mail: <span>mail@gmail.ru</span></p>
-              <svg class="close" width="20" data-action="close-tooltip"
-                height="20">
-                <use href="images/sprite.svg#icon-close"></use>
-              </svg>
-            </div>
-          </li>
-          <li class="smart-menu__item">
-            <svg class="smart-menu_svg" data-action="caret-tooltip" width="25" height="25">
-              <use href="images/sprite.svg#icon-caret"></use>
-            </svg>
-            <span class="caret-sum">0</span>
-            <div class="caret-tooltip"></div>
-          </li>
+            <li class="smart-menu__item smart-menu_language">
+                <img class="smart-menu_svg" src="./images/icons/language.svg" width="25" height="25">
+              <div class="language-tooltip">
+              </div>
+            </li>
+            <li class="smart-menu__item">
+              <img class="smart-menu_svg" src="./images/icons/location.svg"  data-action="location-tooltip" 
+                    width="25" height="25">
+              <div class="tooltip location-tooltip">
+                <p> Киёв, ул. Матроса Кошки 7,
+                  офис 620</p>
+                  <button class="close">
+                      <img class="smart-menu_svg" src="./images/icons/cross.svg" data-action="close-tooltip"> 
+                  </button>
+              </div>
+            </li>
+            <li class="smart-menu__item">
+                <img class="smart-menu_svg" src="./images/icons/phone.svg"  data-action="phone-tooltip" 
+                     width="25" height="25">
+              <div class="tooltip phone-tooltip">
+                <p>тел./факс: +38096 000 00 00</p>
+                <p>моб.: +38096 000 00 0 </p>
+                <hr>
+                <p>e-mail: <span>mail@gmail.ru</span></p>
+                <button class="close">
+                    <img class="smart-menu_svg" src="./images/icons/cross.svg" data-action="close-tooltip"> 
+                </button>
+              </div>
+            </li>
+            <li class="smart-menu__item">
+                <img class="smart-menu_svg" src="./images/icons/caret.svg"  data-action="caret-tooltip" 
+                width="25" height="25">
+              <span class="caret-sum">0</span>
+              <div class="caret-tooltip"></div>
+            </li>
         </ul>
 
         <button class="hamburger hamburger--collapse" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
         </button>
-      </div>
-
-      <section class="search-section">
-        <form class="search-form">
-          <input type="text" class="search-form__input"
-            placeholder="Найти на сайте" />
-          <div class="search-icon_block">
-            <svg class="search-icon" width="18" height="18">
-              <use href="./images/sprite.svg#icon-search"></use>
-            </svg>
-          </div>
-        </form>
+        <nav class="site-navigation">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-menu_link">Акции</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-menu_link">Статьи</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-menu_link">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-menu_link">Помощь</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-menu_link">Сервисный центр</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-menu_link">Сотрудничество</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-menu_link">Wish List</a>
+            </li>
+          </ul>
+        </nav>
       </section>
 
-      <!-- <nav class="site-navigation">
-      <ul class="container main-menu">
-        <li class="menu-item">
-          <a href="#" class="main-menu_link">Home</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="main-menu_link">About Us</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="main-menu_link">Careers</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="main-menu_link">Contact Us</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="main-menu_link">Company Profile</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="main-menu_link">Company Registration</a>
-        </li>
-        <li class="menu-item">
-          <a href="#" class="main-menu_link">Wish List</a>
-        </li>
-      </ul>
-    </nav> -->
+      <section class="header_wrap search-section"> 
+        <a href="#" class="logo">
+          <img src="./images/logo.png" alt="Security UA">         
+          <span>Security UA</span>
+        </a>
+
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <p>+38096<span>00 00 00</span></p>
+          </li>
+          <li class="contacts-item">
+            <p>+38096<span>00 00 00</span></p>
+          </li>
+          <li class="contacts-item">
+            <p class="contacts-adres">Киёв, ул. Матроса Кошки 7, <br>
+                офис 620</p>
+          </li>
+        </ul>
+
+        <form class="search-form">
+          <input type="text" class="search-form__input" placeholder="Найти на сайте" />
+          <button type="button" class="search-icon_block">
+            <img src="./images/icons/search.svg" alt="search">
+          </button>
+        </form>
+      </section>
     </header>
 
     <section class="product-section">
@@ -256,13 +264,13 @@
                 <p class="filter-name">Популярности</p>
               </li>
             </ul>
-            <p class="filter-params"><img src="./images/params.svg" alt="params"></p>
+            <p class="filter-params"><img src="./images/icons/params.svg" alt="params"></p>
       </div>
 
         <div class="product-list slik-slider">
           <section>
               <div class="product-item">
-                  <img class="product-img" src="./images/Layer_40.png" alt="">
+                  <img class="product-img" src="./images/Layer_91.png" alt="">
                   <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
                     IP 4ext</p>
                   <div class="price-wrap">
@@ -271,7 +279,67 @@
                   </div>
                 </div>
                 <div class="product-item">
-                  <img class="product-img" src="./images/Layer_40.png" alt="">
+                  <img class="product-img" src="./images/Layer_90.png" alt="">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price"><b>3.333</b> грн</span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+          </section>
+          <section>
+              <div class="product-item">
+                  <img class="product-img" src="./images/Layer_89.png" alt="">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price"><b>3.333</b> грн</span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_87.png" alt="">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price"><b>3.333</b> грн</span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+          </section>
+          <section>
+              <div class="product-item">
+                  <img class="product-img" src="./images/Layer_86.png" alt="">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price"><b>3.333</b> грн</span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_85.png" alt="">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price"><b>3.333</b> грн</span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+          </section>
+          <section>
+              <div class="product-item">
+                  <img class="product-img" src="./images/Layer_81.png" alt="">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price"><b>3.333</b> грн</span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_80.png" alt="">
                   <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
                     IP 4ext</p>
                   <div class="price-wrap">
@@ -291,27 +359,7 @@
                   </div>
                 </div>
                 <div class="product-item">
-                  <img class="product-img" src="./images/Layer_40.png" alt="">
-                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                    IP 4ext</p>
-                  <div class="price-wrap">
-                    <span class="product-price"><b>3.333</b> грн</span>
-                    <button class="product-button">Купить</button>
-                  </div>
-                </div>
-          </section>
-          <section>
-              <div class="product-item">
-                  <img class="product-img" src="./images/Layer_40.png" alt="">
-                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                    IP 4ext</p>
-                  <div class="price-wrap">
-                    <span class="product-price"><b>3.333</b> грн</span>
-                    <button class="product-button">Купить</button>
-                  </div>
-                </div>
-                <div class="product-item">
-                  <img class="product-img" src="./images/Layer_40.png" alt="">
+                  <img class="product-img" src="./images/Layer_39.png" alt="">
                   <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
                     IP 4ext</p>
                   <div class="price-wrap">
@@ -321,8 +369,7 @@
                 </div>
           </section>
         </div>
-      </section>
-  
+    </section>
 
     <div class="article">
         <a class="article-link" href="#">Статьи и обзоры</a>
@@ -519,22 +566,18 @@
             <span>Security UA</span>
         </a>
 
-        <svg class="smart-menu_svg" data-action="phone-tooltip" width="25"
-            height="25" fill="#c7c6c9">
-          <use href="./images/sprite.svg#icon-phone"></use>
-        </svg>
+        <img class="smart-menu_svg" src="./images/icons/phone_white.svg" 
+        width="25" height="25">
 
         <ul class="social-block">
           <li class="social-item youtube-block">
-            <svg class="youtube" width="30" height="30">
-              <use href="./images/sprite.svg#icon-youtube"></use>
-            </svg>
+              <img class="youtube" width="30" height="30"class="smart-menu_svg"
+               src="./images/icons/youtube.svg">
             <p class="social-text">наш канал <br> на YouTube</p>
           </li>
-          <li>
-            <svg class="social-item facebook" width="30" height="30">
-              <use href="./images/sprite.svg#icon-facebook2"></use>
-            </svg>
+          <li class="social-item facebook">
+              <img width="30" height="30"
+               src="./images/icons/facebook2.svg">
           </li>
         </ul>
     </footer> 
@@ -561,11 +604,8 @@
       <div class="form-overlay">
 
         <form class="filter-form" action="">
-            <button type="button" class="filter_close">   
-                <svg class="close" width="30" height="30">
-                  <use href="./images/sprite.svg#icon-close"></use>
-                </svg>
-              </button>
+          <button type="button" data-action="close-tooltip" class="close filter_close">
+          </button>
             <section class="producer">
               <h4 class="producer-title">Производитель</h4>
                 <ul class="custom-list">
