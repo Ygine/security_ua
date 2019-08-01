@@ -125,25 +125,44 @@
 
 // contacts menu
 .contacts-list{
-    display: flex;
+    display: none;
     align-content: center;
     
     .contacts-item:not(:last-child){
-      padding-right: 30px;
+      position: relative;
+      padding-right: 37px;
+
+      &:after{
+        position: absolute;
+        right: 0;
+        top: 7px;
+        content: '';
+        display: block;
+        width: 1px;
+        height: 23px;
+        background-color: #aaa;
+      }
+
     }
 
     .contacts-item{
-      p{
-        @include font( 400, 14px, 26px);
+      padding-left: 47px;
+
+      .contacts-number{
+        position: relative;
+        @include font( 400, 14px, 29px);
       }
 
       span{
-        @include font( 700, 30px, 1.2);
-        font-family: $font-Helvetica-Con, sans-serif;
+        vertical-align:top;
+        margin-left: 10px;
+        @include font( 700, 30px, 1.2);      
+        font-family: $font-Helvetica-Con;
       }
 
       .contacts-adres{
-        @include font( 400, 12px, 1.2);
+        @include font( 400, 12px, 14px);
+        margin-top: 4px;
       }
     }
 }

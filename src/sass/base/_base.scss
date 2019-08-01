@@ -41,9 +41,7 @@ button {
 }
 
 .wrapper{
-  background: 
-              // url(./../images/background.png)no-repeat bottom/contain,
-              linear-gradient(to top, #e8e8e9, #ffffff)no-repeat;
+  background: linear-gradient( #ffffff, #e8e8e9 , #e8e8e9 )no-repeat;
 }
 
 .container{
@@ -65,4 +63,8 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.color-red{
+  color: red;
 }
