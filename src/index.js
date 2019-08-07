@@ -1,9 +1,10 @@
-import "./sass/styles.scss";
 import "hamburgers/_sass/hamburgers/hamburgers.scss";
 import "slick-carousel";
 import "slick-carousel/slick/slick-theme.scss";
 import "slick-carousel/slick/slick.scss";
+import "./js/slick";
 import MicroModal from 'micromodal';
+import "./sass/styles.scss";
 import $ from 'jquery';
 
 const showHamburgerMenu = () => {
@@ -40,112 +41,94 @@ $(".hamburger-overlay").on("click", function (e) {
 
 $(".hamburger").on("click", showHamburgerMenu);
 
-$(document).ready(function () {
-  $('.product-list.hit').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    arrows: false,
-  });
-});
 
-$(document).ready(function () {
-  $('.slik-slider').slick({
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-
-  });
-});
-
-// TOOLTIP
-const removeTooltip = (e) => {
-  const tooltip = $(e.target).closest('.tooltip');
-  tooltip.toggleClass('show');
-}
-
-const openTooltip2 = (e, openTooltip, tooltip) => {
-  if (openTooltip[0] === tooltip[0]) {
-    openTooltip.removeClass('show');
-    return;
+  // TOOLTIP
+  const removeTooltip = (e) => {
+    const tooltip = $(e.target).closest('.tooltip');
+    tooltip.toggleClass('show');
   }
 
-  if (openTooltip.length !== 0) {
-    openTooltip.removeClass('show');
-  }
-
-  tooltip.addClass('show');
-}
-
-const heandleClickTooltip = (e) => {
-  if (e.target.nodeName !== 'IMG') {
-    return;
-  }
-
-  const openTooltip = $('.tooltip.show');
-  const tooltip = $(e.target).siblings('.tooltip');
-  let action = e.target.dataset.action;
-
-  switch (action) {
-    case "location-tooltip":
-    case "phone-tooltip":
-      openTooltip2(e, openTooltip, tooltip);
-      break;
-    case "close-tooltip":
-      removeTooltip(e);
-      break;
-    case "caret-tooltip":
-      MicroModal.show('note-editor-modal');
-      break;
-    default:
-      console.log("some error");
-  }
-}
-
-$('.smart-menu').on('click', heandleClickTooltip);
-
-// HAMBURGER MENU 
-
-const changeViewMenu = (e) => {
-  if (e.target.nodeName !== 'LI') {
-    return;
-  }
-
-  const menu = e.target.dataset.menu;
-  const activeMenu = $('.main-menu_header li.active');
-
-  if (menu === "main-menu") {
-    $('.main-menu-list').show();
-    $('.serv-menu-list').hide();
-    activeMenu ? activeMenu.removeClass('active') : '';
-    $(e.target).addClass('active');
-  } else {
-    $('.serv-menu-list').show();
-    $('.main-menu-list').hide();
-    activeMenu ? activeMenu.removeClass('active') : '';
-    $(e.target).addClass('active');
-  }
-
-}
-
-const handleFilter = () => {
-  $('.filter-content').removeClass('visually-hidden');
-  $('.form-overlay').on('click', function (e) {
-    if (e.currentTarget !== e.target) {
-      return
+  const openTooltip2 = (e, openTooltip, tooltip) => {
+    if (openTooltip[0] === tooltip[0]) {
+      openTooltip.removeClass('show');
+      return;
     }
+
+    if (openTooltip.length !== 0) {
+      openTooltip.removeClass('show');
+    }
+
+    tooltip.addClass('show');
+  }
+
+  const heandleClickTooltip = (e) => {
+    if (e.target.nodeName !== 'IMG') {
+      return;
+    }
+
+    const openTooltip = $('.tooltip.show');
+    const tooltip = $(e.target).siblings('.tooltip');
+    let action = e.target.dataset.action;
+
+    switch (action) {
+      case "location-tooltip":
+      case "phone-tooltip":
+        openTooltip2(e, openTooltip, tooltip);
+        break;
+      case "close-tooltip":
+        removeTooltip(e);
+        break;
+      case "caret-tooltip":
+        MicroModal.show('note-editor-modal');
+        break;
+      default:
+        console.log("some error");
+    }
+  }
+
+  $('.smart-menu').on('click', heandleClickTooltip);
+
+  // HAMBURGER MENU 
+
+  const changeViewMenu = (e) => {
+    if (e.target.nodeName !== 'LI') {
+      return;
+    }
+
+    const menu = e.target.dataset.menu;
+    const activeMenu = $('.main-menu_header li.active');
+
+    if (menu === "main-menu") {
+      $('.main-menu-list').show();
+      $('.serv-menu-list').hide();
+      activeMenu ? activeMenu.removeClass('active') : '';
+      $(e.target).addClass('active');
+    } else {
+      $('.serv-menu-list').show();
+      $('.main-menu-list').hide();
+      activeMenu ? activeMenu.removeClass('active') : '';
+      $(e.target).addClass('active');
+    }
+
+  }
+
+  const handleFilter = () => {
+    $('.filter-content').removeClass('visually-hidden');
+    $('.form-overlay').on('click', function (e) {
+      if (e.currentTarget !== e.target) {
+        return
+      }
+      $('.filter-content').addClass('visually-hidden');
+    })
+  }
+
+  $('.main-menu_header').on('click', changeViewMenu);
+  $('.filter-params').on('click', handleFilter);
+
+  $('.filter_close').on('click', () => {
     $('.filter-content').addClass('visually-hidden');
-  })
-}
+  });
 
-$('.main-menu_header').on('click', changeViewMenu);
-$('.filter-params').on('click', handleFilter);
-
-$('.filter_close').on('click', () => {
-  $('.filter-content').addClass('visually-hidden');
-});
-// MicroModal.show('note-editor-modal');
-// MicroModal.close('note-editor-modal');
+$('.advert-video-play').on('click', function(){
+  MicroModal.show('modal-video');
+})

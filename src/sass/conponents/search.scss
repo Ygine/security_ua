@@ -53,10 +53,12 @@
   box-shadow: 2px 3px 3px -3px rgba(0,0,0,0.75),
               -1px -1px 3px -3px rgba(0,0,0,0.75);
   cursor: pointer;
+  border: 1px solid #8d8b92;
 }
 
 .search-form__input:focus {
   background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid #ccc;
 }
 
 .search-form__input::placeholder {

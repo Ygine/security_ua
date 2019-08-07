@@ -9,9 +9,11 @@
 @import "./base/base";
 @import "./utils/placeholders";
 
+// libs
+@import "./libs/micromodal";
+
 //layout
 @import "./layout/header";
-@import "./layout/main";
 @import "./layout/footer";
 
 //conponents
@@ -24,8 +26,10 @@
 @import "./conponents/tooltips";
 @import "./conponents/request";
 @import "./conponents/filters";
+@import "./conponents/left-sidebar";
+@import "./conponents/right-sidebar";
+@import "./conponents/main-content";
+@import "./conponents/cust-slick";
 @import "./conponents/media";
 
-// libs
-@import "./libs/micromodal";
 

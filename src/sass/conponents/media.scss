@@ -8,7 +8,9 @@
   }
   .lang-list{
     display: flex;
+    margin-left: 100px;
   }
+
   .hamburger-overlay{
     top: 95px;
   } 
@@ -16,20 +18,17 @@
   .top-section .logo span{
     display: block;
   }
+
+  .filter-content{
+    top: 95px;
+  }
 }
 
-@media(min-width: 1023px){
-    // header
-    .top-section .logo{
-      display: none;
-    }
-}
 
 @media(min-width: 1024px){
 
   .wrapper{
-    background: 
-                url(./../images/background.png)no-repeat bottom/contain,
+    background: url(./../images/background.png)no-repeat 50% 110%/contain,
                 linear-gradient( #ffffff, #e8e8e9 , #e8e8e9 )no-repeat;
   }
     // header
@@ -37,7 +36,7 @@
     .header{ 
       position: static;
       padding-top: 23px;
-      padding-bottom: 10px;
+      padding-left: 55px;
     }
     .nav-menu{
       display: flex;
@@ -55,23 +54,6 @@
       padding: 12px 32px 12px 8px;
     }
 
-    // .search-section .logo{
-    //   display: flex;
-
-    //     img{
-    //       width: 48px;
-    //       height: 48px;
-    //       margin-right: 15px;
-    //    }
-
-    //    span{
-    //      display: block;
-    //      @include font( 700, 36px, 45px);
-    //      font-family: $font-Helvetica-Con;
-    //      text-shadow: 2px 5px 6px rgba(2, 2, 6, 0.16);
-    //    }
-    // }
-
     button.hamburger{
       display: none;
     }
@@ -79,4 +61,176 @@
     .contacts-list{
       display: flex;
     }
+
+    // products
+    .product-item .product-img{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .product-item{
+      text-align: left;
+
+      .product-info{
+        padding: 0;
+        margin-bottom: 13px;
+      }
+    }  
+
+    .price-wrap {
+      flex-direction: row;
+
+      .product-price{
+        margin-bottom: 0;
+        margin-right: 35px;
+        white-space: nowrap;
+      }
+    }
+
+    .stocks-list,
+    .filter-sidebar .filter-list{
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    // filters
+    .filters-menu{
+      padding: 0;
+      margin-bottom: 18px;
+
+    }
+
+    .filter-form{
+      margin-right: 33px;
+    }
+
+    .filter_close,
+    .filter-params,
+    .filter-text.mobile{
+      display: none;
+    }
+
+    .filter-sidebar{
+      display: block;
+    }
+
+    .filter-text.desktop{
+      display: block;
+      margin: 0;
+      margin-right: 21px;
+    }
+
+    .producer-title{
+      margin-bottom: 20px;    
+    }
+
+    .custom-list label{
+      display: block;
+      padding: 5px 0;
+      cursor: pointer;
+    }
+
+    // 
+    .products-block{
+        margin-left: auto;
+        margin-right: 5px;
+        border-radius: 30px;
+        padding: 45px 43px;
+
+      .product-list{
+        display: flex;
+        flex-wrap: wrap;
+      
+        .product-item:not(:nth-child(3n)){
+          padding-right: 43px;
+          border-right: 1px solid #eee;
+        }
+
+        .product-item:not(:nth-child(3n + 1)){
+          padding-left: 50px;
+        }
+
+        .product-item:nth-child(-n + 9){
+          margin-bottom: 20px;
+        }
+      }
+    }
+    
+    .popular-product{
+       border-radius: 30px;
+    }
+
+}
+
+
+@media(min-width: 1200px){
+
+  .main-container{
+    display: flex;
+  }
+
+  .contacts-item:first-child{
+    padding-left: 47px;
+  }
+
+
+
+  .lang-list{
+    margin-left: 230px;
+  }
+
+  #modal-video{
+
+    .modal__container{
+        min-height: 400px;
+        max-width: 900px;
+    }
+  }
+
+  .popular-product{
+    padding: 30px 39px 1px 39px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+  }
+
+  .sell-out,
+  .product-type,
+  .advert-slider{
+    display: block;
+  }
+
+  .left-sidebar{
+    display: block;
+  }
+}
+
+@media(min-width: 1400px){
+  .right-sidebar{
+    display: block;
+  }
+
+  .top-section .logo{
+    display: none;
+  }
+
+  .contacts-list{
+    margin-left: 95px;
+  }
+
+  .search-section .logo{
+    display: flex;
+
+      img{
+        width: 48px;
+        height: 48px;
+        margin-right: 15px;
+     }
+
+     span{
+       display: block;
+       @include font( 700, 36px, 45px);
+       font-family: $font-Helvetica-Con;
+       text-shadow: 2px 5px 6px rgba(2, 2, 6, 0.16);
+     }
+  }
 }

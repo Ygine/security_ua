@@ -83,9 +83,8 @@
       </div>
     </div>
 
-    <header class="header">
-
-      <section class="header_wrap top-section">
+    <header class="header container"> 
+      <div class="header_wrap top-section">
         <a href="#" class="logo">
           <img src="./images/logo.png" alt="Security UA">
           <span>Security UA</span>
@@ -101,25 +100,25 @@
         <ul class="smart-menu">
           <li class="smart-menu__item smart-menu_language">
             <img class="smart-menu_svg" src="./images/icons/language.svg"
-              width="25" height="25">
+              width="25" height="25" alt="language">
             <div class="language-tooltip">
             </div>
           </li>
           <li class="smart-menu__item">
             <img class="smart-menu_svg" src="./images/icons/location.svg"
-              data-action="location-tooltip" width="25" height="25">
+              data-action="location-tooltip" width="25" height="25" alt="location">
             <div class="tooltip location-tooltip">
               <p> Киёв, ул. Матроса Кошки 7,
                 офис 620</p>
               <button class="close">
                 <img class="smart-menu_svg" src="./images/icons/cross.svg"
-                  data-action="close-tooltip">
+                  data-action="close-tooltip" alt="close">
               </button>
             </div>
           </li>
           <li class="smart-menu__item">
             <img class="smart-menu_svg" src="./images/icons/phone.svg"
-              data-action="phone-tooltip" width="25" height="25">
+              data-action="phone-tooltip" width="25" height="25" alt="phone">
             <div class="tooltip phone-tooltip">
               <p>тел./факс: +38096 000 00 00</p>
               <p>моб.: +38096 000 00 0 </p>
@@ -127,13 +126,14 @@
               <p>e-mail: <span>mail@gmail.ru</span></p>
               <button class="close">
                 <img class="smart-menu_svg" src="./images/icons/cross.svg"
-                  data-action="close-tooltip">
+                  data-action="close-tooltip" alt="close">
               </button>
             </div>
           </li>
           <li class="smart-menu__item">
             <img class="smart-menu_svg" src="./images/icons/caret.svg"
-              data-action="caret-tooltip" width="25" height="25">
+              data-action="caret-tooltip" width="25" height="25" alt="
+              shopping basket">
             <span class="caret-sum">0</span>
             <div class="caret-tooltip"></div>
           </li>
@@ -166,13 +166,13 @@
               <a href="#" class="nav-menu_link">Сотрудничество</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-menu_link">Wish List</a>
+              <a href="#" class="nav-menu_link">Контакты</a>
             </li>
           </ul>
         </nav>
-      </section>
+      </div>
 
-      <section class="header_wrap search-section">
+      <div class="header_wrap search-section">
         <a href="#" class="logo">
           <img src="./images/logo.png" alt="Security UA">
           <span>Security UA</span>
@@ -198,326 +198,545 @@
             <img src="./images/icons/search.svg" alt="search">
           </button>
         </form>
-      </section>
+      </div>
     </header>
 
     <main class="main-container">
-
-      <section class="top-block">
+      <div class="left-sidebar">
         <div class="catalog">
-          <ul class="content-list">
-            <li class="content-item">
-              <a href="#" class="content_link">Видеонаблюдения</a>
-            </li>
-            <li class="content-item">
-              <a href="#" class="content_link">Домофоны</a>
-            </li>
-            <li class="content-item">
-              <a href="#" class="content_link">Контроль доступа</a>
-            </li>
-            <li class="content-item">
-              <a href="#" class="content_link">Пожарная сигнализация</a>
-            </li>
-            <li class="content-item">
-              <a href="#" class="content_link">Блоки питания</a>
-            </li>
-            <li class="content-item">
-              <a href="#" class="content_link">металлодетекторы</a>
-            </li>
-            <li class="content-item">
-              <a href="#" class="content_link">Кабель</a>
-            </li>
-            <li class="content-item">
-              <a href="#" class="content_link">Разное</a>
-            </li>
-            <li class="content-item">
-              <a href="#" class="content_link">Умный дом</a>
-            </li>
-            <li class="content-item">
-              <a href="#" class="content_link">Солнечная енергетика</a>
-            </li>
-            <li class="content-item">
-              <a href="#" class="content_link">Распродажа</a>
-            </li>
-          </ul>
-          <div class="adress">
-            <p>Киёв, ул. Матроса Кошки 7, офис 620</p><br>
-            <p>тел./факс: +38096 000 00 00 <br>
-              моб.: +38096 000 00 0</p><br>
-            <p>e-mail: <span class="color-red">mail@gmail.ru</span></p>
-          </div>
+              <ul class="content-list">
+                <li class="content-item">
+                  <a href="#" class="content_link">Видеонаблюдения</a>
+                </li>
+                <li class="content-item">
+                  <a href="#" class="content_link">Домофоны</a>
+                </li>
+                <li class="content-item">
+                  <a href="#" class="content_link">Контроль доступа</a>
+                </li>
+                <li class="content-item">
+                  <a href="#" class="content_link">Пожарная сигнализация</a>
+                </li>
+                <li class="content-item">
+                  <a href="#" class="content_link">Блоки питания</a>
+                </li>
+                <li class="content-item">
+                  <a href="#" class="content_link">металлодетекторы</a>
+                </li>
+                <li class="content-item">
+                  <a href="#" class="content_link">Кабель</a>
+                </li>
+                <li class="content-item">
+                  <a href="#" class="content_link">Разное</a>
+                </li>
+                <li class="content-item">
+                  <a href="#" class="content_link">Умный дом</a>
+                </li>
+                <li class="content-item">
+                  <a href="#" class="content_link">Солнечная енергетика</a>
+                </li>
+                <li class="content-item">
+                  <a href="#" class="content_link">Распродажа</a>
+                </li>
+              </ul>
+              <div class="adress">
+                <p>Киёв, ул. Матроса Кошки 7, офис 620</p><br>
+                <p>тел./факс: +38096 000 00 00 <br>
+                  моб.: +38096 000 00 0</p><br>
+                <p>e-mail: <span class="color-red">mail@gmail.ru</span></p>
+              </div>
         </div>
+        <article class="advert-product">
+            <h3 class="advert-product-title">Солнечные панели</h3>
+            <p class="advert-product-subtitle">поликристаллические</p>
+            <div class="price-wrap">
+                <span class="price-currency">от<span class="product-price"> 2.822 </span>грн</span>
+                <button class="product-button">Купить</button>
+              </div>
+        </article>
+      </div>
 
-        <div class="advert">
-          <h2 class="advert-headline">Искусство <span>Безопасности</span></h2>
-          <p class="advert-desc">В камерах HIKVISION встроены современные
-            технологи
-            подавления шумов, так что ваша изображение будет всегда оставаться
-            чистым.</p>
-          <ul class="producer-list">
-            <li class="producer-item">
-              <a href="#">
-                  <img src="./images/commax.png"
-                  alt="producer-Commax">
-              </a>
-            </li>
-            <li class="producer-item">
-              <a href="#"><img src="./images/alhua.png"
-                alt="producer-Alhua"></a></li>
-            <li class="producer-item">
-              <a href="#"><img src="./images/ifsec_logo.png"
-                alt="producer-Ifsec"></a></li>
-            <li class="producer-item">
-              <a href="#"><img src="./images/hikvision.png"
-                alt="producer-Hikvision"></a></li>
-            <li class="producer-item">
-              <a href="#"><img src="./images/Y_electronic.png"
-                alt="producer-electronik"></a></li>
-            <li class="producer-item">
-              <a href="#"><img src="./images/garret.png"
-                alt="producer-Garrett"></a></li>
-          </ul>
-
-          <button><img src="./images/icons/play.svg" alt="play"></button>
-
+      <div class="main-content">
+        <div class="advert-slider">
+              <h2 class="advert-headline">Искусство <span>Безопасности</span></h2>
+              <p class="advert-desc">В камерах HIKVISION встроены современные
+                технологи
+                подавления шумов, так что ваша изображение будет всегда оставаться
+                чистым.</p>
+    
+              <ul class="advert-slider-controls">
+                <li><p>01</p></li>
+                <li><p>02</p></li>
+                <li><p>03</p></li>
+              </ul>
+    
+              <ul class="producer-list">
+                <li class="producer-item">
+                  <a href="#">
+                      <img src="./images/commax.png"
+                      alt="producer-Commax">
+                  </a>
+                </li>
+                <li class="producer-item">
+                  <a href="#"><img src="./images/alhua.png"
+                    alt="producer-Alhua"></a></li>
+                <li class="producer-item">
+                  <a href="#"><img src="./images/ifsec_logo.png"
+                    alt="producer-Ifsec"></a></li>
+                <li class="producer-item">
+                  <a href="#"><img src="./images/hikvision.png"
+                    alt="producer-Hikvision"></a></li>
+                <li class="producer-item">
+                  <a href="#"><img src="./images/Y_electronic.png"
+                    alt="producer-electronik"></a></li>
+                <li class="producer-item">
+                  <a href="#"><img src="./images/garret.png"
+                    alt="producer-Garrett"></a></li>
+              </ul>
+    
+              <button class="advert-video-play"><img src="./images/icons/play.svg" alt="play-button"></button>
+               <div class="advert-images">
+                 <!-- <img src="./images/2-layers.png" alt="камера HIKVISION"> -->
+               </div> 
         </div>
+        <div class="popular-product">
+            <ul class="stocks-list">
+                <li class="stocks-list-item">
+                  <p class="stocks-name active-btn">Хиты продаж</p>
+                </li>
+                <li class="stocks-list-item">
+                  <p class="stocks-name">Новинки</p>
+                </li>
+                <li class="stocks-list-item">
+                  <p class="stocks-name">Акция</p>
+                </li>
+              </ul>
+              <ul class="product-list hit container">
+                <li class="product-item">
+                  <img class="product-img" src="./images/Layer_36.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения<br> ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822 <span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </li>
+                <li class="product-item">
+                  <img class="product-img" src="./images/Layer_36.png" alt="ATIS Starter">
+                  <p class="product-info">Видеокамера <br>
+                    HAC-HDW1200EMP-A-0360B-S3</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822 <span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </li>
+                <li class="product-item">
+                  <img class="product-img" src="./images/Layer_39.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения <br> ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822 <span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </li>
+                <li class="product-item">
+                  <img class="product-img" src="./images/Layer_40.png" alt="ATIS Starter">
+                  <p class="product-info">Видеокамера<br>
+                    HAC-HDW1200EMP-A-0360B-S3</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822 <span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </li>
+      
+              </ul>
+        </div>
+        <div class="products-block">
+            <p class="filter-text mobile">Показать по: </p>
+            
+            <div class="filters-menu">
+              <p class="filter-text desktop">Показать по: </p>
+              <ul class="filter-list">
+                <li class="filter-list-item">
+                  <p class="filter-name">Цене</p>
+                </li>
+                <li class="filter-list-item">
+                  <p class="filter-name">Алфавиту</p>
+                </li>
+                <li class="filter-list-item">
+                  <p class="filter-name">Популярности</p>
+                </li>
+              </ul>
+              <p class="filter-params"><img src="./images/icons/params.svg"
+                  alt="params"></p>
+            </div>
+    
+            <div class="product-list slik-slider">
+              <div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_91.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_90.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_89.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_87.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_86.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_85.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_81.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_80.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_40.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_39.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_40.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <img class="product-img" src="./images/Layer_39.png" alt="ATIS Starter">
+                  <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
+                    IP 4ext</p>
+                  <div class="price-wrap">
+                    <span class="product-price">2.822<span class="price-currency">грн</span></span>
+                    <button class="product-button">Купить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="leave-request">
+            <p class="request-subtitle">Доверьте нам свою безопасность.</p>
+            <p class="request-title">Оставьте заявку сейчас!</p>
+            <div class="request-info">
+              <button class="request-btn active-btn">Оставить заявку </button>
+              <div>
+                <span class="request-info-text">или позвоните нам</span><br>
+                <span class="request-info-number"> +000 00-00-00</span>
+              </div>
+            </div>
+        </div>        
+        <div class="article">
+          <a class="article-link" href="#">Статьи и обзоры</a>
+        </div>
+      </div>
 
+      <div class="right-sidebar">
         <div class="product-type">
-          <div class="basket">
-            <img src="./images/icons/caret.svg" width="45px" height="50px"
-              alt="basket">
-            <p class="basket-text">Корзина <br>
-              <span class="active-btn">2.540 грн</span>
-            </p>
-          </div>
-
-          <ul class="product-type">
-            <li class="product-type-item">
-              <a href="#" class="product-type-link">
-                  <span> Видео-камеры </span>
-                <img src="./images/camers.png" alt="camers">
-              </a>
-            </li>
-            <li class="product-type-item">
-              <a href="#" class="product-type-link">
-                  <span> Видео-регистраторы </span>
-                <img src="./images/video_recorders.png" alt="video_recorders">
-              </a>
-            </li>
-            <li class="product-type-item">
-              <a href="#" class="product-type-link">
-                  <span> Сигнализации </span>
-                <img src="./images/signaling.png" alt="signaling">
-              </a>
-            </li>
-            <li class="product-type-item">
-              <a href="#" class="product-type-link">
-                  <span> Вызывные панели </span>
-                <img src="./images/panels.png" alt="video_recorders">
-              </a>
-            </li>
-            <li class="product-type-item">
-              <a href="#" class="product-type-link">
-                  <span> Домофоны </span>
-                <img src="./images/domofon.png" alt="domofon">
-              </a>
-            </li>
-
-          </ul>
-
+              <div class="basket">
+                <img src="./images/icons/caret.svg" width="45" height="50"
+                  alt="basket">
+                <p class="basket-text">Корзина <br>
+                  <span class="active-btn">2.540 грн</span>
+                </p>
+              </div>
+    
+              <ul class="product-type-list">
+                <li class="product-type-item">
+                  <a href="#" class="product-type-link">
+                      <span> Видео-камеры </span>
+                    <img src="./images/camers.png" alt="camers">
+                  </a>
+                </li>
+                <li class="product-type-item">
+                  <a href="#" class="product-type-link">
+                      <span> Видео-регистраторы </span>
+                    <img src="./images/video_recorders.png" alt="video_recorders">
+                  </a>
+                </li>
+                <li class="product-type-item">
+                  <a href="#" class="product-type-link">
+                      <span> Сигнализации </span>
+                    <img src="./images/signaling.png" alt="signaling">
+                  </a>
+                </li>
+                <li class="product-type-item">
+                  <a href="#" class="product-type-link">
+                      <span> Вызывные панели </span>
+                    <img src="./images/panels.png" alt="video_recorders">
+                  </a>
+                </li>
+                <li class="product-type-item">
+                  <a href="#" class="product-type-link">
+                      <span> Домофоны </span>
+                    <img src="./images/domofon.png" alt="domofon">
+                  </a>
+                </li>
+    
+              </ul>
+    
         </div>
-      </section>
-
-      <section class="product-section">
-        <ul class="stocks-list">
-          <li class="stocks-list-item">
-            <p class="stocks-name active-btn">Хиты продаж</p>
-          </li>
-          <li class="stocks-list-item">
-            <p class="stocks-name">Новинки</p>
-          </li>
-          <li class="stocks-list-item">
-            <p class="stocks-name">Акция</p>
-          </li>
-        </ul>
-        <ul class="product-list hit container">
-          <li class="product-item">
-            <img class="product-img" src="./images/Layer_36.png" alt="">
-            <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-              IP 4ext</p>
-            <div class="price-wrap">
-              <span class="product-price"><b>3.333</b> грн</span>
-              <button class="product-button">Купить</button>
-            </div>
-          </li>
-          <li class="product-item">
-            <img class="product-img" src="./images/Layer_39.png" alt="">
-            <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-              IP 4ext</p>
-            <div class="price-wrap">
-              <span class="product-price"><b>3.333</b> грн</span>
-              <button class="product-button">Купить</button>
-            </div>
-          </li>
-          <li class="product-item">
-            <img class="product-img" src="./images/Layer_40.png" alt="">
-            <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-              IP 4ext</p>
-            <div class="price-wrap">
-              <span class="product-price"><b>3.333</b> грн</span>
-              <button class="product-button">Купить</button>
-            </div>
-          </li>
-
-        </ul>
-      </section>
-
-      <section class="request">
-        <p class="request-subtitle">Доверьте нам свою безопасность.</p>
-        <p class="request-title">Оставьте заявку сейчас!</p>
-        <div class="request-info">
-          <button class="request-btn active-btn">Оставить заявку </button>
-          <div>
-            <span class="request-info-text">или позвоните нам</span><br>
-            <span class="request-info-number"> +000 00-00-00</span>
-          </div>
+        <div class="sell-out">
+            <a class="sell-out_link" href="#">Распородажа</a>
+            <ul class="sell-out-list">
+              <li class="product-item">
+                <img class="product-img" src="./images/Layer_90.png" alt="Видеокамера
+                HAC-HDW1200EMP-A-0360B-S3">
+                <p class="product-info">Видеокамера
+                  HAC-HDW1200EMP-A-0360B-S3</p>
+                <div class="price-wrap">
+                  <span class="product-price">2.822 <span class="price-currency">грн</span></span>
+                  <button class="product-button">Купить</button>
+                </div>
+              </li>
+              <li class="product-item">
+                <img class="product-img" src="./images/Layer_90.png" alt="Видеокамера
+                HAC-HDW1200EMP-A-0360B-S3">
+                <p class="product-info">Видеокамера
+                  HAC-HDW1200EMP-A-0360B-S3</p>
+                <div class="price-wrap">
+                  <span class="product-price">2.822 <span class="price-currency">грн</span></span>
+                  <button class="product-button">Купить</button>
+                </div>
+              </li>
+              <li class="product-item">
+                <img class="product-img" src="./images/Layer_90.png" alt="Видеокамера
+                HAC-HDW1200EMP-A-0360B-S3">
+                <p class="product-info">Видеокамера
+                  HAC-HDW1200EMP-A-0360B-S3</p>
+                <div class="price-wrap">
+                  <span class="product-price">2.822 <span class="price-currency">грн</span></span>
+                  <button class="product-button">Купить</button>
+                </div>
+              </li>
+              <li class="product-item">
+                <img class="product-img" src="./images/Layer_90.png" alt="Видеокамера
+                HAC-HDW1200EMP-A-0360B-S3">
+                <p class="product-info">Видеокамера
+                  HAC-HDW1200EMP-A-0360B-S3</p>
+                <div class="price-wrap">
+                  <span class="product-price">2.822 <span class="price-currency">грн</span></span>
+                  <button class="product-button">Купить</button>
+                </div>
+              </li>
+            </ul>
+  
         </div>
-      </section>
-
-      <section class="products-section">
-        <p class="filter-text">Показать по: </p>
-        <div class="filters-wrap">
-          <ul class="filter-list">
-            <li class="filter-list-item">
-              <p class="filter-name">Цене</p>
-            </li>
-            <li class="filter-list-item">
-              <p class="filter-name">Алфавиту</p>
-            </li>
-            <li class="filter-list-item">
-              <p class="filter-name">Популярности</p>
-            </li>
-          </ul>
-          <p class="filter-params"><img src="./images/icons/params.svg"
-              alt="params"></p>
+        <div class="filter-sidebar">
+            <div class="view-block">
+              <p>Вид</p>
+              <button class="view-1"><img src="./images/icons/view_1.svg" width="25" height="25" alt="view"></button>
+              <button class="view-2"><img src="./images/icons/view_2.svg" width="25" height="25" alt="view"></button>
+            </div>
+            <form class="filter-form">
+                  <button type="button" data-action="close-tooltip"
+                    class="close filter_close">
+                  </button>
+                  <section class="producer">
+                    <h4 class="producer-title">Производитель</h4>
+                    <ul class="custom-list">
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-1" name="custom-check" value="atis" />
+                        <label for="custom-check-1">ATIS</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-2" name="custom-check" value="Dahua" />
+                        <label for="custom-check-2">Dahua</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-3" name="custom-check" value="Hikvision" />
+                        <label for="custom-check-3">Hikvision</label>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="producer">
+                    <h4 class="producer-title">Тип установки</h4>
+                    <ul class="custom-list">
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-4" name="custom-check"
+                          value="Внутренняя" />
+                        <label for="custom-check-4">Внутренняя</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-5" name="custom-check" value="Наружная" />
+                        <label for="custom-check-5">Наружная</label>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="producer">
+                    <h4 class="producer-title">Разрешение камеры</h4>
+                    <ul class="custom-list">
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-6" name="custom-check" value="1Mp" />
+                        <label for="custom-check-6">1Mp</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-7" name="custom-check" value="1.3Mp" />
+                        <label for="custom-check-7">1.3Mp</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-9" name="custom-check" value="1.4Mp" />
+                        <label for="custom-check-9">1.4Mp</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-10" name="custom-check" value="2Mp" />
+                        <label for="custom-check-10">2Mp</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-11" name="custom-check" value="2.4Mp" />
+                        <label for="custom-check-11">2.4Mp</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-12" name="custom-check" value="3Mp" />
+                        <label for="custom-check-12">3Mp</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-13" name="custom-check" value="4Mp" />
+                        <label for="custom-check-13">4Mp</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-14" name="custom-check" value="5Mp" />
+                        <label for="custom-check-14">5Mp</label>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="producer">
+                    <h4 class="producer-title">Разрешение камеры</h4>
+                    <ul class="custom-list">
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-15" name="custom-check" value="1280x720" />
+                        <label for="custom-check-15">1280x720</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-16" name="custom-check" value="1280x960" />
+                        <label for="custom-check-16">1280x960</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-17" name="custom-check"
+                          value="1920x1080" />
+                        <label for="custom-check-17">1920x1080</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-18" name="custom-check"
+                          value="2048x1536" />
+                        <label for="custom-check-18">2048x1536</label>
+                      </li>
+                      <li>
+                        <input class="visually-hidden" type="checkbox"
+                          id="custom-check-19" name="custom-check"
+                          value="2304x1536" />
+                        <label for="custom-check-19">2304x1536</label>
+                      </li>
+                    </ul>
+                  </section>
+            </form>
         </div>
-
-        <div class="product-list slik-slider">
-          <section>
-            <div class="product-item">
-              <img class="product-img" src="./images/Layer_91.png" alt="">
-              <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                IP 4ext</p>
-              <div class="price-wrap">
-                <span class="product-price"><b>3.333</b> грн</span>
-                <button class="product-button">Купить</button>
-              </div>
-            </div>
-            <div class="product-item">
-              <img class="product-img" src="./images/Layer_90.png" alt="">
-              <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                IP 4ext</p>
-              <div class="price-wrap">
-                <span class="product-price"><b>3.333</b> грн</span>
-                <button class="product-button">Купить</button>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div class="product-item">
-              <img class="product-img" src="./images/Layer_89.png" alt="">
-              <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                IP 4ext</p>
-              <div class="price-wrap">
-                <span class="product-price"><b>3.333</b> грн</span>
-                <button class="product-button">Купить</button>
-              </div>
-            </div>
-            <div class="product-item">
-              <img class="product-img" src="./images/Layer_87.png" alt="">
-              <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                IP 4ext</p>
-              <div class="price-wrap">
-                <span class="product-price"><b>3.333</b> грн</span>
-                <button class="product-button">Купить</button>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div class="product-item">
-              <img class="product-img" src="./images/Layer_86.png" alt="">
-              <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                IP 4ext</p>
-              <div class="price-wrap">
-                <span class="product-price"><b>3.333</b> грн</span>
-                <button class="product-button">Купить</button>
-              </div>
-            </div>
-            <div class="product-item">
-              <img class="product-img" src="./images/Layer_85.png" alt="">
-              <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                IP 4ext</p>
-              <div class="price-wrap">
-                <span class="product-price"><b>3.333</b> грн</span>
-                <button class="product-button">Купить</button>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div class="product-item">
-              <img class="product-img" src="./images/Layer_81.png" alt="">
-              <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                IP 4ext</p>
-              <div class="price-wrap">
-                <span class="product-price"><b>3.333</b> грн</span>
-                <button class="product-button">Купить</button>
-              </div>
-            </div>
-            <div class="product-item">
-              <img class="product-img" src="./images/Layer_80.png" alt="">
-              <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                IP 4ext</p>
-              <div class="price-wrap">
-                <span class="product-price"><b>3.333</b> грн</span>
-                <button class="product-button">Купить</button>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div class="product-item">
-              <img class="product-img" src="./images/Layer_40.png" alt="">
-              <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                IP 4ext</p>
-              <div class="price-wrap">
-                <span class="product-price"><b>3.333</b> грн</span>
-                <button class="product-button">Купить</button>
-              </div>
-            </div>
-            <div class="product-item">
-              <img class="product-img" src="./images/Layer_39.png" alt="">
-              <p class="product-info">Комплект видеонаблюдения ATIS Starter Kit
-                IP 4ext</p>
-              <div class="price-wrap">
-                <span class="product-price"><b>3.333</b> грн</span>
-                <button class="product-button">Купить</button>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <div class="article">
-        <a class="article-link" href="#">Статьи и обзоры</a>
       </div>
 
       <div class="modal micromodal-slide" id="note-editor-modal"
         aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-          <div class="modal__container" role="dialog" aria-modal="true"
-            aria-labelledby="modal-title">
-            <main class="modal__content">
-              Список заказов пуст
-            </main>
+          <div class="modal__container" role="dialog" aria-modal="true">
+            <div class="modal__content">
+              <p>Список заказов пуст</p>
+              <form id="note-editor-form"></form>
+            </div>
             <footer class="modal__footer">
               <button class="modal__btn" form="note-editor-form" type="submit">
                 Оформить заказ
@@ -531,7 +750,7 @@
       <div class="filter-content visually-hidden">
         <div class="form-overlay">
 
-          <form class="filter-form" action="">
+          <form class="filter-form">
             <button type="button" data-action="close-tooltip"
               class="close filter_close">
             </button>
@@ -540,18 +759,18 @@
               <ul class="custom-list">
                 <li>
                   <input class="visually-hidden" type="checkbox"
-                    id="custom-check-1" name="custom-check" value="atis" />
-                  <label for="custom-check-1">ATIS</label>
+                    id="check-1" name="custom-check" value="atis" />
+                  <label for="check-1">ATIS</label>
                 </li>
                 <li>
                   <input class="visually-hidden" type="checkbox"
-                    id="custom-check-2" name="custom-check" value="Dahua" />
-                  <label for="custom-check-2">Dahua</label>
+                    id="check-2" name="custom-check" value="Dahua" />
+                  <label for="check-2">Dahua</label>
                 </li>
                 <li>
                   <input class="visually-hidden" type="checkbox"
-                    id="custom-check-3" name="custom-check" value="Hikvision" />
-                  <label for="custom-check-3">Hikvision</label>
+                    id="check-3" name="custom-check" value="Hikvision" />
+                  <label for="check-3">Hikvision</label>
                 </li>
               </ul>
             </section>
@@ -560,59 +779,14 @@
               <ul class="custom-list">
                 <li>
                   <input class="visually-hidden" type="checkbox"
-                    id="custom-check-4" name="custom-check"
+                    id="check-4" name="custom-check"
                     value="Внутренняя" />
-                  <label for="custom-check-4">Внутренняя</label>
+                  <label for="check-4">Внутренняя</label>
                 </li>
                 <li>
                   <input class="visually-hidden" type="checkbox"
-                    id="custom-check-5" name="custom-check" value="Наружная" />
-                  <label for="custom-check-5">Наружная</label>
-                </li>
-              </ul>
-            </section>
-            <section class="producer">
-              <h4 class="producer-title">Разрешение камеры</h4>
-              <ul class="custom-list">
-                <li>
-                  <input class="visually-hidden" type="checkbox"
-                    id="custom-check-6" name="custom-check" value="1Mp" />
-                  <label for="custom-check-6">1Mp</label>
-                </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox"
-                    id="custom-check-7" name="custom-check" value="1.3Mp" />
-                  <label for="custom-check-7">1.3Mp</label>
-                </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox"
-                    id="custom-check-9" name="custom-check" value="1.4Mp" />
-                  <label for="custom-check-9">1.4Mp</label>
-                </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox"
-                    id="custom-check-10" name="custom-check" value="2Mp" />
-                  <label for="custom-check-10">2Mp</label>
-                </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox"
-                    id="custom-check-11" name="custom-check" value="2.4Mp" />
-                  <label for="custom-check-11">2.4Mp</label>
-                </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox"
-                    id="custom-check-12" name="custom-check" value="3Mp" />
-                  <label for="custom-check-12">3Mp</label>
-                </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox"
-                    id="custom-check-13" name="custom-check" value="4Mp" />
-                  <label for="custom-check-13">4Mp</label>
-                </li>
-                <li>
-                  <input class="visually-hidden" type="checkbox"
-                    id="custom-check-14" name="custom-check" value="5Mp" />
-                  <label for="custom-check-14">5Mp</label>
+                    id="check-5" name="custom-check" value="Наружная" />
+                  <label for="check-5">Наружная</label>
                 </li>
               </ul>
             </section>
@@ -621,31 +795,76 @@
               <ul class="custom-list">
                 <li>
                   <input class="visually-hidden" type="checkbox"
-                    id="custom-check-15" name="custom-check" value="1280x720" />
-                  <label for="custom-check-15">1280x720</label>
+                    id="check-6" name="custom-check" value="1Mp" />
+                  <label for="check-6">1Mp</label>
                 </li>
                 <li>
                   <input class="visually-hidden" type="checkbox"
-                    id="custom-check-16" name="custom-check" value="1280x960" />
-                  <label for="custom-check-16">1280x960</label>
+                    id="check-7" name="custom-check" value="1.3Mp" />
+                  <label for="check-7">1.3Mp</label>
                 </li>
                 <li>
                   <input class="visually-hidden" type="checkbox"
-                    id="custom-check-17" name="custom-check"
+                    id="check-9" name="custom-check" value="1.4Mp" />
+                  <label for="check-9">1.4Mp</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox"
+                    id="check-10" name="custom-check" value="2Mp" />
+                  <label for="check-10">2Mp</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox"
+                    id="check-11" name="custom-check" value="2.4Mp" />
+                  <label for="check-11">2.4Mp</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox"
+                    id="check-12" name="custom-check" value="3Mp" />
+                  <label for="check-12">3Mp</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox"
+                    id="check-13" name="custom-check" value="4Mp" />
+                  <label for="check-13">4Mp</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox"
+                    id="check-14" name="custom-check" value="5Mp" />
+                  <label for="check-14">5Mp</label>
+                </li>
+              </ul>
+            </section>
+            <section class="producer">
+              <h4 class="producer-title">Разрешение камеры</h4>
+              <ul class="custom-list">
+                <li>
+                  <input class="visually-hidden" type="checkbox"
+                    id="check-15" name="custom-check" value="1280x720" />
+                  <label for="check-15">1280x720</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox"
+                    id="check-16" name="custom-check" value="1280x960" />
+                  <label for="check-16">1280x960</label>
+                </li>
+                <li>
+                  <input class="visually-hidden" type="checkbox"
+                    id="check-17" name="custom-check"
                     value="1920x1080" />
-                  <label for="custom-check-17">1920x1080</label>
+                  <label for="check-17">1920x1080</label>
                 </li>
                 <li>
                   <input class="visually-hidden" type="checkbox"
-                    id="custom-check-18" name="custom-check"
+                    id="check-18" name="custom-check"
                     value="2048x1536" />
-                  <label for="custom-check-18">2048x1536</label>
+                  <label for="check-18">2048x1536</label>
                 </li>
                 <li>
                   <input class="visually-hidden" type="checkbox"
-                    id="custom-check-19" name="custom-check"
+                    id="check-19" name="custom-check"
                     value="2304x1536" />
-                  <label for="custom-check-19">2304x1536</label>
+                  <label for="check-19">2304x1536</label>
                 </li>
               </ul>
             </section>
@@ -653,8 +872,24 @@
         </div>
       </div>
 
-    </main>
+      <div class="modal micromodal-slide" id="modal-video"
+      aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true">
+          <div class="modal__content">
+            <iframe height="455" src="https://www.youtube.com/embed/f07OoChF2Mw"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope;
+              picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <footer class="modal__footer">
+            <button class="modal__btn" data-micromodal-close>close</button>
+          </footer>
+        </div>
+      </div>
+    </div>
 
+    </main>
+    
     <footer class="footer">
       <a href="#" class="logo">
         <img src="./images/logo.png" alt="Security UA">
@@ -662,16 +897,16 @@
       </a>
 
       <img class="smart-menu_svg" src="./images/icons/phone_white.svg"
-        width="25" height="25">
+        width="25" height="25" alt="phone contact">
 
       <ul class="social-block">
         <li class="social-item youtube-block">
-          <img class="youtube" width="30" height="30" class="smart-menu_svg"
-            src="./images/icons/youtube.svg">
+          <img class="youtube smart-menu_svg" width="30" height="30"
+            src="./images/icons/youtube.svg" alt="youtube icon">
           <p class="social-text">наш канал <br> на YouTube</p>
         </li>
         <li class="social-item facebook">
-          <img width="30" height="30" src="./images/icons/facebook2.svg">
+          <img width="30" height="30" src="./images/icons/facebook2.svg" alt="facebook icon">
         </li>
       </ul>
     </footer>

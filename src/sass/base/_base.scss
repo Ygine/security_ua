@@ -11,6 +11,7 @@ html {
 body {
   font-family: $font-Helvetica, "Rpboto", "Open Sans", sans-serif;
   color: #66666a;
+  background-color: #fff;
 }
 
 img {
@@ -41,12 +42,13 @@ button {
 }
 
 .wrapper{
+  max-width: 1555px;
+  margin: 0 auto;
   background: linear-gradient( #ffffff, #e8e8e9 , #e8e8e9 )no-repeat;
 }
 
-.container{
-  min-width: 320px;
-  max-width: 865px;
+.main-container{
+  overflow: hidden;
 }
 
 .visually-hidden:not(:focus):not(:active),

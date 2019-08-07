@@ -4,7 +4,6 @@
     z-index: 99999;
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding-left: 5px;
     background-color: #fff;
 
@@ -84,7 +83,6 @@
 .lang-list{
     display: none;
     align-items: center;
-    margin-left: 70px;
 
     .lang-name{
         width: 41px;
@@ -92,6 +90,7 @@
         @include font( 700, 11px, 28px);
         color: #66666a;
         outline: none;
+        cursor: pointer;
 
         &.active{
             position: relative;
@@ -118,8 +117,12 @@
 
     .nav-menu_link{
         @include font( 700, 12px, 14px);
-       padding: 10px;
+       padding: 9px;
        color: #8e8d93;
+    }
+
+    .nav-item:last-child .nav-menu_link{
+      padding-right: 0;
     }
 }
 
@@ -144,6 +147,10 @@
       }
 
     }
+
+    .contacts-item:first-child{
+      padding-left: 0;
+   }
 
     .contacts-item{
       padding-left: 47px;

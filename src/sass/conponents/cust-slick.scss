@@ -1,0 +1,15 @@
+.slick-dots{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slick-dots li button:before{
+    font-size: 7px;
+  }
+  
+  .slick-dots li{
+    margin: 0;
+    width: 10px;
+  }
+  
+  
